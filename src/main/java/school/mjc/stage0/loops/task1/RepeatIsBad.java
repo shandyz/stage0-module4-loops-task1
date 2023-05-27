@@ -2,15 +2,13 @@ package school.mjc.stage0.loops.task1;
 
 public class RepeatIsBad {
 
-    int n = 20;
     @SuppressWarnings("java:S106")
-    public void repeatIsBad(int n){
+    public void repeatIsBad(){
 
         String message = "writing the same code doesn't have much impact, and it's also time consuming";
 
-        if (n > 0) {
-            System.out.println(message);
-            repeatIsBad(n - 1);
-        }
+       for (int i = 1; i <= 20; i++) {
+           System.out.printf(message);
+       }
     }
 }
